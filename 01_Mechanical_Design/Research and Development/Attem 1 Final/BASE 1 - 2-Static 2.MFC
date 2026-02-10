@@ -1,0 +1,16 @@
+[StartTime]
+BASE 1 - 2-Static 2.MFC=3s
+[SolverState]
+BASE 1 - 2-Static 2.MFC=2
+[MainFrame]
+BASE 1 - 2-Static 2.MFC=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPMECAAAAAHEBAAAAAELDAAAAAKBCAAAAA
+[ShowMin]
+BASE 1 - 2-Static 2.MFC=No
+[SolverType]
+BASE 1 - 2-Static 2.MFC=Linear Analysis
+[StudyType]
+BASE 1 - 2-Static 2.MFC=0
+[StudyName]
+BASE 1 - 2-Static 2.MFC=Static 2
+[Solver]
+BASE 1 - 2-Static 2.MFC=Iterative

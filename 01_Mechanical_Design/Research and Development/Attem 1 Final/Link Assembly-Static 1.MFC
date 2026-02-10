@@ -1,0 +1,18 @@
+[StartTime]
+Link Assembly-Static 1.MFC=
+[SolverState]
+Link Assembly-Static 1.MFC=2
+[MainFrame]
+Link Assembly-Static 1.MFC=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPMECAAAAAHEBAAAAAELDAAAAAKBCAAAAA
+[ShowMin]
+Link Assembly-Static 1.MFC=yes
+[SolverType]
+Link Assembly-Static 1.MFC=Linear Analysis
+[StudyType]
+Link Assembly-Static 1.MFC=-1
+[StudyName]
+Link Assembly-Static 1.MFC=Static 1
+[Solver]
+Link Assembly-Static 1.MFC=Iterative
+[Dynamic]
+Link Assembly-Static 1.MFC=0
