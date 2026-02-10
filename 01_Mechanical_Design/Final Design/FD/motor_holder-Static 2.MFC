@@ -1,0 +1,16 @@
+[StartTime]
+motor_holder-Static 2.MFC=2s
+[SolverState]
+motor_holder-Static 2.MFC=2
+[MainFrame]
+motor_holder-Static 2.MFC=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPMECAAAAAHEBAAAAAELDAAAAAKBCAAAAA
+[ShowMin]
+motor_holder-Static 2.MFC=No
+[SolverType]
+motor_holder-Static 2.MFC=Linear Analysis
+[StudyType]
+motor_holder-Static 2.MFC=0
+[StudyName]
+motor_holder-Static 2.MFC=Static 2
+[Solver]
+motor_holder-Static 2.MFC=Sparse
