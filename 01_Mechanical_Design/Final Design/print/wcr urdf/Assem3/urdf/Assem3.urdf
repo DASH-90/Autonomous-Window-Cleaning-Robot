@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Assem3">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.194218845445252 0.190414379691839 0.418143292486196"
+        rpy="0 0 0" />
+      <mass
+        value="1.93386825327553" />
+      <inertia
+        ixx="0.0582810981679376"
+        ixy="2.44171468025928E-08"
+        ixz="-8.3560127866099E-08"
+        iyy="0.115543260081691"
+        iyz="-1.40715696672345E-07"
+        izz="0.0681748096590286" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 0.35" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="right_wheel">
+    <inertial>
+      <origin
+        xyz="-0.0274984743709022 -0.100150664541079 -0.173118007128029"
+        rpy="0 0 0" />
+      <mass
+        value="0.797961263242695" />
+      <inertia
+        ixx="0.000951577165629216"
+        ixy="-1.3981644612373E-20"
+        ixz="8.41366114249754E-21"
+        iyy="0.000683436793309796"
+        iyz="-1.62630325872826E-19"
+        izz="0.000683436793309796" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/right_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/right_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_wheel"
+    type="continuous">
+    <origin
+      xyz="0.39422 -0.13015 0.16064"
+      rpy="2.0953 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_wheel" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="r_belt">
+    <inertial>
+      <origin
+        xyz="0.0741916737109046 0.02 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.452700873687633" />
+      <inertia
+        ixx="0.00114176874593011"
+        ixy="4.07987536260826E-20"
+        ixz="-5.91163563202387E-19"
+        iyy="0.0126322943397155"
+        iyz="7.87099730643514E-21"
+        izz="0.0116112458267688" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/r_belt.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/r_belt.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_belt"
+    type="fixed">
+    <origin
+      xyz="-0.0475 -0.1373 -0.23734"
+      rpy="3.1416 -1.0463 1.5708" />
+    <parent
+      link="right_wheel" />
+    <child
+      link="r_belt" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_wheel">
+    <inertial>
+      <origin
+        xyz="0.0275015256290975 0.100150664541077 -0.17311800712803"
+        rpy="0 0 0" />
+      <mass
+        value="0.797961263242694" />
+      <inertia
+        ixx="0.000951577165629215"
+        ixy="1.04113049674265E-20"
+        ixz="-2.36595575318155E-20"
+        iyy="0.000683436793309794"
+        iyz="-5.42101086242752E-20"
+        izz="0.000683436793309794" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/left_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/left_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wheel"
+    type="continuous">
+    <origin
+      xyz="0.39422 -0.65115 0.16064"
+      rpy="-2.0953 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_wheel" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="l_belt">
+    <inertial>
+      <origin
+        xyz="0.0741916737109045 0.0200000000000001 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.452700873687634" />
+      <inertia
+        ixx="0.00114176874593011"
+        ixy="2.00817394578207E-20"
+        ixz="-3.13108785261176E-18"
+        iyy="0.0126322943397155"
+        iyz="-1.22910536819234E-19"
+        izz="0.0116112458267688" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/l_belt.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/l_belt.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_belt"
+    type="fixed">
+    <origin
+      xyz="0.0075 0.1373 -0.23734"
+      rpy="0 -1.0463 -1.5708" />
+    <parent
+      link="left_wheel" />
+    <child
+      link="l_belt" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
