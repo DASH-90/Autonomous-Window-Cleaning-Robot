@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="AG.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00032356 0.094892 -0.00032522"
+        rpy="0 0 0" />
+      <mass
+        value="2.5039" />
+      <inertia
+        ixx="0.062891"
+        ixy="2.4417E-08"
+        ixz="-8.356E-08"
+        iyy="0.12579"
+        iyz="-1.4072E-07"
+        izz="0.073842" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AG.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AG.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Backward_Right_Wheel_Link">
+    <inertial>
+      <origin
+        xyz="-0.027498 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.39898" />
+      <inertia
+        ixx="0.00047579"
+        ixy="-1.641E-20"
+        ixz="-9.1957E-21"
+        iyy="0.00034172"
+        iyz="1.3553E-20"
+        izz="0.00034172" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AG.SLDASM/meshes/Backward_Right_Wheel_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.50196 0.50196 0.50196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AG.SLDASM/meshes/Backward_Right_Wheel_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Backward_Right_Wheel_Joint"
+    type="continuous">
+    <origin
+      xyz="0.2 0.229 0.0578"
+      rpy="2.331 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Backward_Right_Wheel_Link" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Forward_Right_Wheel_Link">
+    <inertial>
+      <origin
+        xyz="-0.027498 1.1102E-16 4.1633E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.39898" />
+      <inertia
+        ixx="0.00047579"
+        ixy="-1.7834E-20"
+        ixz="1.1974E-20"
+        iyy="0.00034172"
+        iyz="0"
+        izz="0.00034172" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AG.SLDASM/meshes/Forward_Right_Wheel_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.50196 0.50196 0.50196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AG.SLDASM/meshes/Forward_Right_Wheel_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Forward_Right_Wheel_Joint"
+    type="continuous">
+    <origin
+      xyz="-0.2 0.229 0.0578"
+      rpy="2.6288 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Forward_Right_Wheel_Link" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Right_Belt_Link">
+    <inertial>
+      <origin
+        xyz="0.074192 0.02 6.9389E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.4527" />
+      <inertia
+        ixx="0.0011418"
+        ixy="-3.0496E-19"
+        ixz="-6.8044E-19"
+        iyy="0.012632"
+        iyz="1.1201E-19"
+        izz="0.011611" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AG.SLDASM/meshes/Right_Belt_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AG.SLDASM/meshes/Right_Belt_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right_Belt_Joint"
+    type="fixed">
+    <origin
+      xyz="-0.010811 -0.10963 -0.061719"
+      rpy="3.1416 0.51276 -1.5708" />
+    <parent
+      link="Forward_Right_Wheel_Link" />
+    <child
+      link="Right_Belt_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Backward_Left_Wheel_Link">
+    <inertial>
+      <origin
+        xyz="-0.027498 4.1633E-17 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.39898" />
+      <inertia
+        ixx="0.00047579"
+        ixy="-2.6724E-20"
+        ixz="-7.9826E-21"
+        iyy="0.00034172"
+        iyz="8.1315E-20"
+        izz="0.00034172" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AG.SLDASM/meshes/Backward_Left_Wheel_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.50196 0.50196 0.50196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AG.SLDASM/meshes/Backward_Left_Wheel_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Backward_Left_Wheel_Joint"
+    type="continuous">
+    <origin
+      xyz="0.2 -0.229 0.0578"
+      rpy="-2.331 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Backward_Left_Wheel_Link" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Forward_Left_Wheel_Link">
+    <inertial>
+      <origin
+        xyz="-0.027498 -2.7756E-17 1.3878E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.39898" />
+      <inertia
+        ixx="0.00047579"
+        ixy="3.8027E-22"
+        ixz="1.5409E-20"
+        iyy="0.00034172"
+        iyz="0"
+        izz="0.00034172" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AG.SLDASM/meshes/Forward_Left_Wheel_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.50196 0.50196 0.50196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AG.SLDASM/meshes/Forward_Left_Wheel_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Forward_Left_Wheel_Joint"
+    type="continuous">
+    <origin
+      xyz="-0.2 -0.229 0.0578"
+      rpy="-2.6288 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Forward_Left_Wheel_Link" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Left_Belt_Link">
+    <inertial>
+      <origin
+        xyz="0.074192 0.02 2.7756E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.4527" />
+      <inertia
+        ixx="0.0011418"
+        ixy="-6.1509E-19"
+        ixz="-6.1719E-19"
+        iyy="0.012632"
+        iyz="-2.4518E-19"
+        izz="0.011611" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AG.SLDASM/meshes/Left_Belt_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AG.SLDASM/meshes/Left_Belt_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left_Belt_Joint"
+    type="fixed">
+    <origin
+      xyz="-0.010811 0.10963 -0.061719"
+      rpy="0 0.51276 1.5708" />
+    <parent
+      link="Forward_Left_Wheel_Link" />
+    <child
+      link="Left_Belt_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Lidar">
+    <inertial>
+      <origin
+        xyz="-0.0074817 0.010662 9.1777E-05"
+        rpy="0 0 0" />
+      <mass
+        value="1.3304" />
+      <inertia
+        ixx="0.00061474"
+        ixy="0.00015819"
+        ixz="8.0027E-07"
+        iyy="0.0010981"
+        iyz="3.096E-06"
+        izz="0.0009605" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AG.SLDASM/meshes/Lidar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.29804 0.29804 0.29804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AG.SLDASM/meshes/Lidar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Scan"
+    type="fixed">
+    <origin
+      xyz="0 0 0.21466"
+      rpy="1.5708 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="Lidar" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

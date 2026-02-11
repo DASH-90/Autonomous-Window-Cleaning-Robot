@@ -1,0 +1,13 @@
+digraph G {
+"base_link" -> "Backward_Left_Wheel_Link"[label=" Broadcaster: default_authority\nAverage rate: 10.37\nBuffer length: 2.7\nMost recent transform: 1737719885.492391\nOldest transform: 1737719882.792408\n"];
+"base_link" -> "Backward_Right_Wheel_Link"[label=" Broadcaster: default_authority\nAverage rate: 10.37\nBuffer length: 2.7\nMost recent transform: 1737719885.492391\nOldest transform: 1737719882.792408\n"];
+"base_link" -> "Forward_Left_Wheel_Link"[label=" Broadcaster: default_authority\nAverage rate: 10.37\nBuffer length: 2.7\nMost recent transform: 1737719885.492391\nOldest transform: 1737719882.792408\n"];
+"base_link" -> "Forward_Right_Wheel_Link"[label=" Broadcaster: default_authority\nAverage rate: 10.37\nBuffer length: 2.7\nMost recent transform: 1737719885.492391\nOldest transform: 1737719882.792408\n"];
+"Forward_Left_Wheel_Link" -> "Left_Belt_Link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"Forward_Right_Wheel_Link" -> "Right_Belt_Link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "Lidar"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1737719885.5110135"[ shape=plaintext ] ;
+}->"base_link";
+}
